@@ -81,7 +81,7 @@ class BeautifyRubyCommand(sublime_plugin.TextCommand):
     return command
 
   def is_erb_file(self):
-    if re.search("\.html\.erb", self.fname):
+    if re.search("\.erb", self.fname):
       return True
     else:
       return False
